@@ -30,7 +30,7 @@
 3. 在窗口中输入下面的command准备环境
     autoreconf
 3. 以下是两个编译并生成exe的command
-    ./configure  --host=i586-pc-mingw32
+    ./configure  --host=i586-pc-mingw32 LDFLAGS="-static"
     make
 4. 在两次编译期间最好是通过下面的command来清理
     make distclean
